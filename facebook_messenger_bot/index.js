@@ -1,5 +1,5 @@
-// server https://tcsiwula-61993.onmodulus.net
-
+// server --  https://tcsiwula-61993.onmodulus.net
+// fb docs -- https://developers.facebook.com/docs/messenger-platform
 var express = require('express');
 var app = express();
 
