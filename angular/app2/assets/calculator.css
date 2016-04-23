@@ -20,3 +20,25 @@
 }
 
 #myCalculator main::after {content:''; display: block; clear: both;}
+
+#myCalculator main section.inc {background-color: #ba2d2d; background-image: url(images/bulb_inc.svg);}
+#myCalculator main section.hal {background-color: #de6615; background-image: url(images/bulb_hal.svg);}
+#myCalculator main section.cfl {background-color: #efc20f; background-image: url(images/bulb_cfl.svg);}
+#myCalculator main section.led {background-color: #36b23c; background-image: url(images/bulb_led.svg);}
+
+#myCalculator main section > div {padding: 5px 0; background-color: rgba(0,0,0,.15);}
+#myCalculator main h4 {
+    font-family: 'Open Sans Condensed', san-serif;
+    font-size: .8em;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+    text-transfrom: uppercase;
+}
+#myCalculator main p { margin: 0; font-size: 1.5em; font-weight: 700;}
+#myCalculator main p + p { font-size: 1em; font-weight: 300;}
+
+#myCalculator main p::after {content:'w';}
+
+#myCalculator main p + p::before {content:'$';}
+#myCalculator main p + p::after {content:'per year'; color: rgba(255,255,255,.5); padding-left: 4px;}
+
