@@ -1,0 +1,56 @@
+// http request
+        url path
+        method
+        headers
+        body
+
+
+   http response
+        status code
+
+
+sample http request
+       POST /index.html HTTP/1.1 // method, url path, protocol version
+       Host: www.packtpub.com    // header
+       Content-Length: 35        // header
+       user=saled&password=chicken // body
+
+
+
+
+
+       url path:    arbitray string that is parsed on the server
+            1) static file
+            2) server side script
+            3) url redirect
+
+
+
+       http methods:
+            1) get: download data
+            2) post: submit form
+            3) put: update server
+            4) delete: update server
+
+
+
+       http headers: key-value pairs sent with req and res
+            1) host: tells server the hostname that a user entered into the address bar (www.google.com)
+            2) content-length: tells the receiver the size of the message's body in bytes (12)
+            3) content-type: format of the data (application/json)
+
+
+
+       http body: messages actual data
+            1) url-encoded form data: (user=saled&password=chicken)
+            2) json-encoded data: {"user": "saleh"}
+
+
+       http response: server sends to client
+          a) headers
+            1) protocol version, status code, reason phrase (HTTP/1.1 200 OK)
+            2) server: nginx/1.4.5
+            3) Date: 16 Dec 2015 00:47:12 GMT
+            4) Content-Type: text/html; charset=utf-8
+          b) body
+            1) raw html
