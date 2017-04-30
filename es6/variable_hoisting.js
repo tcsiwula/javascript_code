@@ -26,19 +26,16 @@ function hoistingOneOuter()
 }
 hoistingOneOuter();
 
-
 /*      example 2
  throws error, 2, 3 or undefined?
  compiler interpretted code as this.
  var bar = undefined;
 */
-
 var foo = 2;
 if(true){
   var bar = 1;
 }
 console.log(foo + bar); // 3
-
 
 /*      example 3
  what happens here?
@@ -47,7 +44,6 @@ console.log(foo + bar); // 3
  */
 console.log(name); //undefined
 var name = "tim";
-
 
 /*      example 4
  trap variables inside functions only
@@ -60,8 +56,6 @@ function run(){
 }
 run();
 console.log(a); // 1
-
-
 
 /*      example 5
  function hoisting
@@ -78,11 +72,5 @@ function funcDecl(){
 var funcExp = function(){
   // ...
 };
-
-
-
-
-
-
 
 
