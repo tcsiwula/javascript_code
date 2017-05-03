@@ -4,7 +4,10 @@
       Make it object oriented
  */
 
+// compute edit distance
 
+
+// build list of edits within 1 or 2 distance away, return that?
 
 
 
