@@ -1,7 +1,12 @@
+/*
+ 3. Write a curried function that can be called like foo(x,y,z)
+ or foo(x)(y)(z)
+ */
+
 function SiwulaPromise(foo){
   return new Promise((resolve, reject) => {
-      resolve(foo());
-    })
+    resolve(foo());
+  })
 };
 
 

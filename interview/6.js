@@ -1,3 +1,8 @@
+/*
+ 6. Given a list of dependencies, (a -> b is "a depends on b"
+ which means "b needs to be installed before a") print out
+ the optimal way to install things to satisfy all dependencies.
+ */
 
 let dependencyGraph = [
   {dependent: 'a', independent: 'b'},
@@ -9,20 +14,23 @@ let dependencyGraph = [
 
 let frequencyTable = [];
 
+// init array to 0
 for(var i =0; i < 255; i++) {
   frequencyTable[i] = 0;
 }
 
+// update frequency distribution
 for(var i =0; i < dependencyGraph.length; i++)
 {
   console.log(dependencyGraph[i].dependent + " depends on " + dependencyGraph[i].independent)
-  //console.log('typeof - ', typeof dependencyGraph[i].dependent.charCodeAt(0));
   frequencyTable[dependencyGraph[i].dependent.charCodeAt(0)]++;
   //console.log('after - ', parseInt(frequencyTable[dependencyGraph[i].dependent.charCodeAt(0)]));
 }
-console.log('install -', frequencyTable);
+
+// sort by most frequent
 dependencyGraph.sort()
-console.log('install -', frequencyTable);
+console.log('frequencyTable() -', frequencyTable);
+
 
 
 
