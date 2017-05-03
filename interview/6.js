@@ -29,7 +29,24 @@ for(var i =0; i < dependencyGraph.length; i++)
 
 // sort by most frequent
 dependencyGraph.sort()
-console.log('frequencyTable() -', frequencyTable);
+console.log('frequencyTable() -', frequencyTable.filter((x)=>{return x > 0}));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
